@@ -13,3 +13,11 @@ const render = galleryItems.map(({ preview, original, description }) =>
 `).join('');
 
 gallaryEl.insertAdjacentHTML('beforeend', render);
+
+var lightbox = new SimpleLightbox('.gallery a', { 
+  caption: true,
+  captionSelector: 'img',
+  captionPosition: 'bottom',
+  captionData: 'alt',
+  captoinDelay: 250, 
+})

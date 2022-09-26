@@ -32,6 +32,7 @@ function onClick(evt) {
     </div>
     `
   );
+  console.dir(evt.target);
   instance.show();
   const modalWindow = document.querySelector('.modal');
   modalWindow.addEventListener('click', onCLickCLose);
